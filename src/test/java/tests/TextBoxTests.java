@@ -9,22 +9,13 @@ import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class TextBoxTests {
-
-    @BeforeAll
-    static void setUp () {
-        Configuration.browser = "chrome";
-        //  Configuration.browserVersion = "144.0";
-        Configuration.browserSize = "1920x1080";
-        Configuration.baseUrl = "https://demoqa.com";
-        //       Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 1000; // default 4000
-    }
+public class TextBoxTests extends TestBase {
 
     @Test
     void successfulFillFormTest() {
 
-        open("https://demoqa.com/text-box");
+        open("/text-box");
+
         $("[id=userName]").val("Александра");
         $("[id=userEmail]").val("alex@an.com");
         $("[id=currentAddress]").val("Москва, ул. Новая, 10");
