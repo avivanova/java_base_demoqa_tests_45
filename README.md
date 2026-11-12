@@ -1,4 +1,4 @@
-# java_base_demoqa_tests_45
-Hello, qa.guru!!!
+# Автотесты для Student Registration Form
 
-:)
+Репозиторий содержит набор тестов для проверки формы регистрации
+https://demoqa.com/automation-practice-form
